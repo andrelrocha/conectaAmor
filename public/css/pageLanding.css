@@ -42,7 +42,12 @@
     background-color: var(--corRealce);
 }
 
-
+@media (max-width: 1020px) {
+    .find a {
+        width: 80%;
+        height: 80%;
+    }
+}
 
 
 .logo {

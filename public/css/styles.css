@@ -26,3 +26,9 @@ body, input, button, textarea {
     line-height: 1.25;
     font-weight: 400;
 }
+
+@media (max-width: 1020px) {
+    body {
+        font-size: 80%;
+    }
+}
