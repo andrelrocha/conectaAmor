@@ -1,0 +1,66 @@
+.pageLanding {
+    background: linear-gradient(320deg, #FFE718 0%, var(--corPrincipal) 100%);
+
+    min-height: 100vh;
+    text-align: center;
+
+    display: flex;
+
+}
+
+.logo {
+    width: 100%;
+}
+
+.location, h1, .find p {
+    height: 16vh;
+}
+
+.container {
+    margin: auto;
+    width: 90%;
+}
+
+.find a {
+    width: 8rem;
+    height: 8rem;
+    background: var(--corTextoSecundaria);
+
+    border: none;
+    border-radius: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto;
+
+    transition: background 200ms;
+}
+
+.find a:hover {
+    background-color: var(--corRealce);
+}
+
+
+
+
+.logo {
+    animation-delay: 50ms;
+}
+
+.location {
+    animation-delay: 100ms;
+}
+
+main h1 {
+    animation-delay: 150ms;
+}
+
+.find p {
+    animation-delay: 200ms;
+}
+
+.find a {
+    animation-delay: 250ms;
+}

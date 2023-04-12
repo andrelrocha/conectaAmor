@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Nunito:wght@400;600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --corPrincipal: #FCC419;
+    --corTexto: #0F0F0F;
+    --corTextoSecundaria:  #042a2b;
+    --corRealce: #F7F7F7;
+
+    --fontePrincipal: 'Nunito', sans-serif;
+    --fonteTitulo: 'Krona One', sans-serif;
+}
+
+body {
+    height: 100vh;
+    color: var(--corTexto);
+}
+
+body, input, button, textarea {
+    font-family: var(--fontePrincipal);
+    font-size: 1.5rem;
+    line-height: 1.25;
+    font-weight: 400;
+}

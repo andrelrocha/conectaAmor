@@ -1,34 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Where's my pet</title>
-        <link rel="icon" href="./public/images/thumbnail.svg">
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <header class="cabecalho">
-            <img src="./public/images/logo2.svg" alt="our logo">
-            <div>
-                <p>Fortaleza - Ceará</p>
-            </div>
-        </header>
-        <main>
-            <h1>
-                Let us help you find the nearest petshop
-            </h1>
-            <section>
-                <p>Find petshops near you</p>
-                <a title="Visit nearby petshops" class="maps" href="https://www.google.com.br/maps">
-                    <img src="./public/images/arrow.svg" alt="ir para o Mapa">
-                </a>
-            </section>
-        </main>
-        <footer>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where's my pet</title>
+    <link rel="icon" href="./public/images/thumbnail.svg">
+    <link rel="stylesheet" href="./public/css/styles.css">
+    <link rel="stylesheet" href="./public/css/animations.css">
+    <link rel="stylesheet" href="./public/css/pageLanding.css">
+</head>
 
-        </footer>
-        <script src="main.js"></script>
-    </body>
+<body>
+
+    <div class="pageLanding">
+        <div class="container">
+            <header>
+                <img class="logo animate-up" src="./public/images/logo2.svg" alt="our logo">
+
+                <div class="location animate-up">
+                    <strong>Fortaleza</strong>
+                    <p>Ceará</p>
+                </div>
+            </header>
+
+            <main>
+                <h1 class="animate-up">Let us help you find the nearest petshop</h1>
+
+                <div class="find">
+                    <p class="animate-up">Find petshops near you</p>
+
+                    <a class="animate-up" href="https://www.google.com.br/maps" title="find petshops">
+                        <img class="seta" src="./public/images/arrow.svg" alt="go to Maps">
+                    </a>
+                </div>
+            </main>
+
+        </div>
+
+    </div>
+    <script src="main.js"></script>
+</body>
+
 </html>
