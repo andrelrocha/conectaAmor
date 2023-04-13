@@ -63,7 +63,7 @@ main h1 {
     header {
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
 
     .location, h1, .find p {
@@ -81,10 +81,9 @@ main h1 {
     }
 
     main h1 {
-        font-size: clamp(4rem, 8vw, 8.4rem);
-        font-weight: bold;
+        font-size: clamp(4rem, 3rem, 8rem);
 
-        width: min(300px, 80%);
+        width: min(550px, 90%);
     }
 
 }
