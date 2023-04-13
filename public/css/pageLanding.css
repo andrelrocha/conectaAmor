@@ -8,17 +8,30 @@
 
 }
 
+.container {
+    margin: auto;
+    width: min(90%, 112rem);
+}
+
 .logo {
     width: 100%;
+    animation-delay: 50ms;
+}
+
+.location {
+    animation-delay: 110ms;
+}
+
+main h1 {
+    animation-delay: 170ms;
 }
 
 .location, h1, .find p {
     height: 16vh;
 }
 
-.container {
-    margin: auto;
-    width: 90%;
+.find p {
+    animation-delay: 230ms;
 }
 
 .find a {
@@ -35,11 +48,45 @@
 
     margin: 0 auto;
 
-    transition: background 200ms;
+    transition: background 260ms;
+
+    animation-delay: 260ms;
 }
 
 .find a:hover {
     background-color: var(--corRealce);
+}
+
+
+/*desktop version*/
+@media (min-width: 1020px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .location, h1, .find p {
+        height: initial;
+        font-size: 2rem;
+        text-align: initial;
+    }
+
+    .logo {
+        width: 80%;
+    }
+
+    .location{
+        text-align: right;
+    }
+
+    main h1 {
+        font-size: clamp(4rem, 8vw, 8.4rem);
+        font-weight: bold;
+
+        width: min(300px, 80%);
+    }
+
 }
 
 @media (max-width: 1020px) {
@@ -47,25 +94,4 @@
         width: 80%;
         height: 80%;
     }
-}
-
-
-.logo {
-    animation-delay: 50ms;
-}
-
-.location {
-    animation-delay: 100ms;
-}
-
-main h1 {
-    animation-delay: 150ms;
-}
-
-.find p {
-    animation-delay: 200ms;
-}
-
-.find a {
-    animation-delay: 250ms;
 }
