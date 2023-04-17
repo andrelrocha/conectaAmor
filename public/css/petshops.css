@@ -8,7 +8,7 @@
 aside {
     width: clamp(26.5rem, 25vw, 44rem);
     background: linear-gradient(320deg, var(--corSecundaria) 0%, var(--corPrincipal) 100%);
-    padding: 5rem;
+    padding: clamp(3rem, 5vw, 8rem);
 
     display: flex;
     flex-direction: column;
@@ -16,7 +16,43 @@ aside {
 }
 
 aside h2 {
-    margin-top: 2.4rem;
+    margin-top: 5rem;
 
     font: 800 3.6rem/1 'Nunito', sans-serif;
+}
+
+aside p {
+    margin-top: 2.4rem;
+    font: 400 1.6rem 'Nunito', sans-serif;
+}
+
+.city {
+    font: 800 1.8rem/1 'Nunito', sans-serif;
+}
+
+.state {
+    margin-top: .8rem;
+}
+
+.create-petshop {
+    position: absolute;
+    right: 4rem;
+    bottom: 4rem;
+
+    width: 6rem;
+    height: 6rem;
+    background: var(--corTextoSecundaria);
+
+    border: none;
+    border-radius: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: background 200ms;
+}
+
+.create-petshop:hover {
+    background-color: var(--corPrincipal);
 }
