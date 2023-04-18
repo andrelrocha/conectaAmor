@@ -1,5 +1,5 @@
 //atenção, passar como parametro ID, não classe
-const myMap = L.map('map').setView([-3.7409806,-38.4986826], 16);
+const myMap = L.map('map').setView([-3.78361,-38.4845282], 16);
 
 //create and add tileLayer
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(myMap);
@@ -21,6 +21,6 @@ const popup = L.popup ({
 }).setContent('Petshop Cobasi <a href="petshop.html?id=1" class="choose-petshop"> <img src="./public/images/arrow-white.svg"> </a>')
 
 //create add marker
-L.marker([-3.7409806,-38.4986826], {icon: icon})
+L.marker([-3.78361,-38.4845282], {icon: icon})
 .addTo(myMap)
 .bindPopup(popup)

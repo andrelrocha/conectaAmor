@@ -11,7 +11,7 @@
     --corSecundaria: #FFE718;
     --corTexto: #0F0F0F;
     --corTextoSecundaria:  #042a2b;
-    --corRealce: #F7F7F7;
+    --corRealce: #F5F5EB;
 
     --fontePrincipal: 'Nunito', sans-serif;
     --fonteTitulo: 'Krona One', sans-serif;
@@ -20,6 +20,7 @@
 body {
     height: 100vh;
     color: var(--corTexto);
+    background: var(--corRealce);
 }
 
 body, input, button, textarea {
