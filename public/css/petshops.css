@@ -37,6 +37,8 @@ aside p {
 #map {
     width: 100%;
     height: 100%;
+
+    animation-delay: 200ms;
 }
 
 .create-petshop {
@@ -44,9 +46,11 @@ aside p {
     right: 4rem;
     bottom: 4rem;
 
+    z-index: 10;
+
     width: 6rem;
     height: 6rem;
-    background: var(--corTextoSecundaria);
+    background: var(--corPrincipal);
 
     border: none;
     border-radius: 2rem;
@@ -59,5 +63,50 @@ aside p {
 }
 
 .create-petshop:hover {
-    background-color: var(--corPrincipal);
+    background: var(--corTextoSecundaria);
+}
+
+.leaflet-container {
+    z-index: 5;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: var(--fontePrincipal);
+}
+
+.leaflet-popup-content-wrapper {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 2rem;
+}
+
+.leaflet-popup-content {
+    color: var(--corPrincipal);
+    
+    margin: .6rem 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.leaflet-popup-content a {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: var(--corPrincipal);
+    /*deslocamento x axis / y axis / blur / color */
+    box-shadow: 17.2828px 27.655px 41.48px rgba(23, 142, 166, 0.16);
+    border-radius: 2rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    transition: background 200ms;
+}
+
+.leaflet-popup-content a:hover {
+    background: var(--corTextoSecundaria);
+}
+
+.leaflet-popup-tip {
+    display: none;
 }
