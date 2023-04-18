@@ -2,3 +2,216 @@
     display: flex;
     min-height: 100vh;
 }
+
+.sidebar {
+    position: fixed;
+    height: 100%;
+    padding: 3rem 2.2rem;
+    background: var(--corPrincipal);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar footer button {
+    width: 4rem;
+    height: 4rem;
+    border: none;
+    border-radius: 1.6rem;
+    background-color: var(--corTextoSecundaria);
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: background 200ms;
+}
+
+.sidebar footer button:hover {
+    background: var(--corSecundaria);
+}
+
+.withSidebar {
+    padding-left: 8.5rem;
+}
+
+main {
+    flex: 1;
+}
+
+.petshopDetails {
+   width: 75rem; 
+   margin: 6.4rem auto;
+   background: white;
+   border: 1px solid var(--corRealce);
+   border-radius: 2rem;
+
+   overflow: hidden;
+}
+
+.mainImage {
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 1.6rem;
+    margin: 1rem 2.2rem 0;
+}
+
+.images button {
+    border: none;
+    background: none;
+
+    height: 8.8rem;
+    cursor: pointer;
+
+    border-radius: 2rem;
+
+    overflow: hidden;
+
+    opacity: 0.6;
+
+    transition: opacity 200ms;
+}
+
+.images button:hover,
+.images button.active {
+    opacity: 1;
+}
+
+.images button img {
+    width: 100%;
+    height: 8.8rem;
+    object-fit: cover;
+}
+
+.petshopDetailsContent {
+    padding: 8rem;
+}
+
+.petshopDetailsContent h1, h2 {
+    color: var(--corTextoSecundaria);
+}
+
+.petshopDetailsContent h1 {
+    font-size: 5rem;
+    line-height: 1.5;
+    margin-bottom: 0.8rem;
+}
+
+.petshopDetailsContent p {
+    color: var(--corPrincipal);
+    line-height: 1.6;
+    margin-top: 2.4rem;
+}
+
+.mapContainer {
+    margin-top: 6.4rem;
+    background: var(--corDestaques);
+    border: 1px solid var(--corRealce);
+    border-radius: 2rem;
+}
+
+#map {
+    width: 100%;
+    height: 28rem;
+}
+
+.mapContainer footer {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.mapContainer footer a {
+    color: var(--corTextoSecundaria);
+    text-decoration: none;
+
+    transition: font-weight 200ms;
+}
+
+.mapContainer footer a:hover {
+    font-weight: 800;
+}
+
+.mapContainer .leaflet-container {
+    border-bottom: 1px solid var(--corRealce);
+    border-radius: 2rem;
+}
+
+.petshopDetailsContent hr {
+    width: 100%;
+    height: 1px;
+    margin: 6rem 0;
+
+    color: var(--corRealce);
+}
+
+.petshopDetailsContent h2 {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.openDetails {
+    margin-top: 2.4rem;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.openDetails img {
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+.openDetails div {
+    padding: 3rem 2rem;
+}
+
+.hour {
+    background: linear-gradient(150deg, var(--corRealce) 8.15%, white 92.65%);
+    border: 1px solid var(--corRealce);
+    border-radius: 1.6rem;
+    color: var(--corTextoSecundaria);
+}
+
+.openOnWeekends {
+    background: linear-gradient(155deg, var(--corRealce) 7.85%, white 91%);
+    border: 1px solid var(--corRealce);
+    border-radius: 1.6rem;
+    color: #37C77F;
+}
+
+.primaryButton {
+    width: 100%;
+    height: 6rem;
+    margin-top: 6rem;
+    border: none;
+    border-radius: 3rem;
+
+    background: #3CDC8C;
+    color: var(--corRealce);
+    
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background color 200ms;
+}
+
+.primaryButton:hover {
+    background: #36CF82;
+    transform: scale(1.05);
+    transition: transform 200ms;
+}
+
+.primaryButton img {
+    margin-right: 1.6rem;
+}
