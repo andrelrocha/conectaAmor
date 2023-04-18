@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petshop Cobasi | Where's my pet</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+    crossorigin=""/>
+
+    <link rel="icon" href="./public/images/thumbnail.svg">
+    <link rel="stylesheet" href="./public/css/styles.css">
+    <link rel="stylesheet" href="./public/css/animations.css">
+    <link rel="stylesheet" href="./public/css/petshop.css">
+</head>
+
+<body>
+    <div class="pagePetshop">
+        <aside class="animate-right">
+            <img src="./public/images/map-marker.svg" alt="Marker">
+
+            <footer>
+                <button onclick="history.back()">
+                    <img src="./public/images/arrow-back.svg" alt="Return">
+                </button>
+            </footer>
+        </aside>
+
+        <main class="animate-appear">
+            <div class="petshopDetails">
+                <img src="./public/images/home.jpg" alt="Cobasi">
+
+                <div class="images">
+                    <button class="active" type="button">
+                        <img src="./public/images/home.jpg" alt="Cobasi">
+                    </button>
+
+                    <button type="button">
+                        <img src="./public/images/home.jpg" alt="Cobasi">
+                    </button>
+
+                    <button type="button">
+                        <img src="./public/images/home.jpg" alt="Cobasi">
+                    </button>
+
+                    <button type="button">
+                        <img src="./public/images/home.jpg" alt="Cobasi">
+                    </button>
+
+                    <button type="button">
+                        <img src="./public/images/home.jpg" alt="Cobasi">
+                    </button>
+
+                    <button type="button">
+                        <img src="./public/images/home.jpg" alt="Cobasi">
+                    </button>
+                </div>
+
+                <div class="petshopDetailsContent">
+                    <h1>Petshop Cobasi</h1>
+
+                    <p>Cobasi is more than just a pet shop. In the store, you will find an incredible diversity of essential products for dogs, cats, rodents, birds, and other animals, as well as everything for aquariums, gardening, and home decor.</p>
+
+                    <div class="mapContainer">
+                        <div id="map"></div>
+
+                        <footer>
+                            <a href="">See directions on Google Maps</a>
+                        </footer>
+                    </div>
+
+                    <hr />
+
+                    <h2>Suggestions for visits</h2>
+                    <p>Bring your pet along to Cobasi and let them have a day of pampering too! With a wide selection of grooming products and services, your furry friend can receive the care they deserve while you shop for their favorite treats and toys.</p>
+                    
+                    <div class="openDetails">
+                        <div class="hour">
+                            <img src="./public/images/clock.svg" alt="Hour">
+                            Hours: 8am - 9pm
+                        </div>
+                        <div class="openOnWeekends">
+                            <img src="./public/images/info.svg" alt="Infos">
+                            Open on weekends
+                        </div>
+                    </div>
+
+                    <button class="primaryButton" type="button">
+                        <img src="./public/images/whatsapp.svg" alt="Whatsapp">
+                        Contact them
+                    </button>
+
+                </div>
+            </div>
+        </main>
+        
+    </div>
+    
+
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin=""></script>
+
+    <script src="./public/scripts/pagePetshop.js"></script>
+</body>
+
+</html>
