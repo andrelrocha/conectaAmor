@@ -28,11 +28,20 @@ function selectImage (event) {
     const button = event.currentTarget;
 
     //remove all classes ".active"
+    const buttons = document.querySelectorAll(".images button");
+    buttons.forEach(removeActiveClass);
+
+    function removeActiveClass (button) {
+        button.classList.remove("active");
+    }
 
     //select img on click
+    const image = button.children[0];
+    const imageContainer = document.querySelector(".mainImage")
 
-    //att img container
+    //update current img container
+    imageContainer.src = image.src;
 
     //add ".active" to the current button
-
+    button.classList.add("active");
 }
